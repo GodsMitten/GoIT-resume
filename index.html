@@ -4,68 +4,91 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- embeding fonts (вставить шрифты) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Resume Dikan Maksim</title>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <main>
-      <!-- about me -->
-      <section>
-        <h1>Dikan Maksim</h1>
-        <h3>Front-End Developer</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet odio
-          adipisci illo, earum atque quae, sequi magni consectetur sit
-          perferendis sunt laborum ipsum quas. A incidunt temporibus aut harum
-          ad.
+    <!-- main container -->
+    <main class="main-container">
+
+      <!-- main content section -->
+      <div class="main-content">
+        <!-- about me -->
+      <section class="about-me">
+        <h2 class="about-me-profession">Front-End Developer</h2>
+        <h1 class="about-me-name">Dikan Maksim</h1>
+
+        <p class="about-me-description">
+          Some information about me like right now I'm creating a content for my
+          resume and learning how to be a Front-End Developer.
         </p>
       </section>
 
       <!-- projects -->
-      <section>
-        <h2>Projects</h2>
-        <ol>
+      <section class="my-projects">
+        <h3 class="main-content-title">Projects</h3>
+        <ol class="my-projects-list">
           <li>
-            <a href="#">Personal Portfolio</a>
-          </li>
+            <a class="my-projects-item" href="https://resume-dikan-maksim.netlify.app/">Resume</a>
+                        ....................
+                        <span>[</span><span class="my-projects-item">HTML5, CSS3</span><span>]<span>
+                    </li>
           <li>
-            <a href="#">Survey Form</a>
-          </li>
-          <li>
-            <a href="#">Product Landing Page</a>
-          </li>
+            <a class="my-projects-item" href="https://jsfiddle.net/gm944/hn051csb/9/">Cards project</a>
+                        ........
+                        <span>[</span><span class="my-projects-item">JavaScript</span><span>]</span>
+                    </li>
+          
         </ol>
       </section>
 
       <!-- Work experience -->
       <section>
-        <h2>Work experience</h2>
-        <h3>Front-End Developer Freelance</h3>
-        <p>December 2021 - up to now | Ukraine</p>
+        <h2 class="main-content-title">Work experience</h2>
+        <!-- company 1 -->
+        <!-- Если что, то идут снизу вверх от самой первой до текущего места работы -->
+        <div class="my-work-experience"> 
+        <h3 class="my-work-experience-position">Front-End Developer <span class="my-work-experience-company">Freelance</span></h3>
+        <p class="my-work-experience-period">December 2021 - up to now <span class="my-work-experience-divider">|</span> Ukraine</p>
+
         <!-- обязанности -->
-        <ul>
-          <li>Lorem ipsum dolor</li>
-          <li>Lorem ipsum dolor</li>
-          <li>Lorem ipsum dolor</li>
-        </ul>
+        <ul class="my-work-experience-duties">
+          <li class="my-work-experience-duty">Learning HTML, CSS</li>
+          <li class="my-work-experience-duty">Learning Java</li>
+
+          </ul>
+          </div>
       </section>
 
       <!-- Education -->
       <section>
-        <h2>Education</h2>
-        <h3>
-          System engineer, Kharkiv National Automobile and Highway University
-        </h3>
-        <p>September 2015 - July 2019 | Ukraine</p>
+        <h2 class="main-content-title">Education</h2>
+        <!-- university -->
+        <div>
+                    <h3 class="my-work-experience-company">Kharkiv National Automobile and Highway University</h3>
+                    <h3>System engineer</h3>
+                    <p class="my-work-experience-period">September 2015 - July 2019 <span class="my-work-experience-divider">|</span> Ukraine</p>
+                </div>
       </section>
     </main>
 
-    <!-- Contacts -->
-    <aside>
-      <section>
-        <img src="./img/photo.jpg" alt="photo" />
-        <h2>Contacts</h2>
-        <ul>
+        <!-- sidebar section -->
+        <aside class="sidebar">
+           <img width="370" src="./img/my-photo.jpg" alt="красивая фотография">
+      <!-- contacts -->
+           <section class="contacts">
+        
+        <h2 class="sidebar-title">Contacts</h2>
+        <!-- <ul>
           <li>
             <a href="tel:+380971519163">Phone: +380 97 151 91 63</a>
           </li>
@@ -74,14 +97,39 @@
               >Email: dikan.maksim944@gmail.com</a
             >
           </li>
-        </ul>
+        </ul>  -->
+         <div>
+                    <span class="contacts-type">C:</span>
+                    <a class="contacts-link" href="tel:+380971519163">+380 97 151 91 63</a>
+                </div>
+
+                <div>
+                    <span class="contacts-type">E:</span>
+                    <a class="contacts-link" href="mailto:dikan.maksim944@gmail.com">dikan.maksim944@gmail.com</a>
+                </div>
       </section>
-      <div>
-        <h2>Tech skills</h2>
-      </div>
-      <div>
-        <h2>Soft skills</h2>
-      </div>
+     <!-- tech skills -->
+            <div class="skills">
+                <h3 class="sidebar-title">Tech skills</h3>
+                <ul class="skill-list">
+                    <li> <span  class="skill-item">HTML5</span> </li>
+                    <li> <span  class="skill-item">CSS3</span> </li>
+                    <li> <span  class="skill-item">Figma</span> </li>
+                    <li> <span  class="skill-item">GIT</span> </li>
+                    <li> <span  class="skill-item">Base Java</span> </li>
+                    
+                </ul>
+            </div>
+
+                <!-- soft skills -->
+                <div class="skills">
+                    <h3 class="sidebar-title">Soft Skills</h3>
+                    <ul class="skill-list">
+                        <li> <span  class="skill-item">Scrum</span> </li> 
+                        <li> <span  class="skill-item">Agile</span> </li> 
+                        <li> <span  class="skill-item">Teamwork</span> </li> 
+                    </ul>
+                </div>
     </aside>
   </body>
 </html>
