@@ -66,6 +66,9 @@ body {
     color: #000;
     margin-bottom: 50px;
 }
+a:hover {
+    color: rgb(13, 185, 7);
+}
 
 .my-projects-item {
     color: #595959;
