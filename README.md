@@ -1,1 +1,1 @@
-# GoIT-resume
+#Java dev resume
