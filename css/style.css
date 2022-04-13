@@ -194,12 +194,8 @@ li {
 }
 
 .contacts,
-.tech-skills {
-  margin: 50px 0 0 40px;
-}
-
-.soft-skills {
-  margin: 45px 0 0 0;
+.skills {
+  margin: 45px 0 0 5px;
 }
 
 .sidebar-title {
@@ -230,18 +226,15 @@ li {
 }
 
 /* Tech and soft skills list */
-.tech-skills-list,
-.soft-list-skills {
+.skill-list{
   padding-left: 17px;
 }
 
-.tech-skills-item,
-.soft-skills-item {
+.skill-item {
   color: #fb6d3a;
 }
 
-.tech-skills-item-text,
-.soft-skills-item-text {
+.skill-item-text{
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
