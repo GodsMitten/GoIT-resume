@@ -4,64 +4,96 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Resume Maksim Dikan</title>
+
+<!-- embeding fonts (вставить шрифты) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    
+    <title>CV_Junior Java Developer_Maksim Dikan_April 2022_eng</title>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
+  
   <body>
-    <main>
+   <!-- main container -->
+    <main class="main-container">
+     
       <!-- about me -->
-      <section>
-        <h1>Maksim Dikan</h1>
-        <h3>Java Developer</h3>
+      <section class="about-me">
+        <h2 class="about-me-profession">Java Developer</h2>
+        <h1 class="about-me-name">Maksim Dikan</h1>
+ 
         <p>
           Enthusiastic self-motivated learner is looking for new opportunities as a java developer.
-          Extremely organized with good writing and multitasking skills. 
+          Extremely organized with good multitasking skills. 
           Bilingual in Russian and Ukrainian, with an intermediate understanding of English.
         </p>
       </section>
 
       <!-- projects -->
-      <section>
-        <h2>Projects</h2>
-        <ol>
+      <section class="my-projects">
+        <h3 class="main-content-title">Projects</h3>
+        <ol class="my-projects-list">
+           <li>
+            <a class="my-projects-item" href="https://resume-dikan-maksim.netlify.app/" title="This awesome resume" target="_blank">Resume</a>
+                        ....................
+                        <span>[</span><span class="my-projects-item">HTML5, CSS3</span><span>]<span>
+                    </li>
           <li>
-            <a href="#">Personal Portfolio</a>
-          </li>
-          <li>
-            <a href="https://tribute-page-gary-gygax-by-gm944.netlify.app">Tribute page</a>
-          </li>
+            <a class="my-projects-item" href="https://tribute-page-gary-gygax-by-gm944.netlify.app/" title="Page about Gary Gygax">Tribute Page</a>
+                        .........
+                        <span>[</span><span class="my-projects-item">HTML5, CSS3</span><span>]</span>
+      
+                    </li>
         </ol>
       </section>
 
       <!-- Work experience -->
       <section>
-        <h2>Additional education</h2>
-        <h3>JavaRush course</h3>
-        <p>November 2021 - up to now | Ukraine</p>
+        <h2 class="main-content-title">Additional education</h2>
+        
+        <!-- company 1 -->
+        <!-- Если что, то идут снизу вверх от самой первой до текущего места работы -->
+        <div class="my-work-experience"> 
+        <h3 class="my-work-experience-position">JavaRush course <span class="my-work-experience-company">Freelance</span></h3>
+         <p class="my-work-experience-period">November 2021 - up to now <span class="my-work-experience-divider">|</span> Ukraine</p>
+         
         <!-- обязанности -->
-        <ul>
-          <li>Deep understanding of Java Core</li>
-          <li>SOLID, DRY principles</li>
-          <li>SQL</li>
-        </ul>
+         <ul class="my-work-experience-duties">
+          <li class="my-work-experience-duty">Learning Java Core<</li>
+           <li class="my-work-experience-duty">Generics</li>
+           <li class="my-work-experience-duty">Collection</li>
+           <li class="my-work-experience-duty">Stream</li>
+           <li class="my-work-experience-duty">Learning SQL</li>
+          <li class="my-work-experience-duty">SOLID, DRY principles</li>
+       </ul>
+          </div>
       </section>
 
       <!-- Education -->
       <section>
-        <h2>Education</h2>
-        <h3>
-          System engineer, Kharkiv National Automobile and Highway University
-        </h3>
-        <p>September 2015 - July 2019 | Ukraine</p>
+        <h2 class="main-content-title">Education</h2>
+        <!-- university -->
+        <div>
+                    <h3 class="my-work-experience-company">Kharkiv National Automobile and Highway University</h3>
+                    <h3>System engineer</h3>
+                    <p class="my-work-experience-period">September 2015 - July 2019 <span class="my-work-experience-divider">|</span> Ukraine</p>
+                </div>
       </section>
-    </main>
+      </div>
+</main>
 
-    <!-- Contacts -->
-    <aside>
-      <section>
-        <img src="./img/photo.jpg" alt="photo" />
-        <h2>Contacts</h2>
-        <ul>
+        <!-- sidebar section -->
+        <aside class="sidebar">
+           <img width="370" src="./img/photo.jpg" alt="красивая фотография">
+      <!-- contacts -->
+           <section class="contacts">
+        
+        <h2 class="sidebar-title">Contacts</h2>
+        <!-- <ul>
           <li>
             <a href="tel:+380971519163">Phone: +380 97 151 91 63</a>
           </li>
@@ -70,21 +102,40 @@
               >Email: dikan.maksim944@gmail.com</a
             >
           </li>
-        </ul>
+        </ul>  -->
+         <div>
+                    <span class="contacts-type">C:</span>
+                    <a class="contacts-link" href="tel:+380971519163" title="Feel free to call me">+380 97 151 91 63</a>
+                </div>
+
+                <div>
+                    <span class="contacts-type">E:</span>
+                    <a class="contacts-link" href="mailto:dikan.maksim944@gmail.com" title="Feel free to send me a letter">dikan.maksim944@gmail.com</a>
+                </div>
       </section>
-      <div>
-        <h2>Tech skills</h2>
-        <ul>
-          <li>Git</li>
-          <li>HTML5, CSS3, Figma</li>
-        </ul>
+     <!-- tech skills -->
+      <div class="skills">
+          <h3 class="sidebar-title">Tech skills</h3>
+          <ul class="skill-list">
+              <li> <span  class="skill-item">Java8</span> </li>
+              <li> <span  class="skill-item">HTML5</span> </li>
+              <li> <span  class="skill-item">CSS3</span> </li>
+              <li> <span  class="skill-item">Figma</span> </li>
+              <li> <span  class="skill-item">GIT</span> </li>
+              <li> <span  class="skill-item">SQL</span> </li>
+              
+          </ul>
       </div>
-      <div>
-        <h2>Soft skills</h2>
-        <ul>
-          <li>Team-work</li>
-          <li>Self-motivation</li>
-        </ul>
+
+      <!-- soft skills -->
+      <div class="skills">
+          <h3 class="sidebar-title">Soft Skills</h3>
+          <ul class="skill-list">
+              <li> <span  class="skill-item">Scrum</span> </li> 
+              <li> <span  class="skill-item">SOLID</span> </li> 
+              <li> <span  class="skill-item">DRY</span> </li> 
+              <li> <span  class="skill-item">Teamwork</span> </li> 
+          </ul>
       </div>
     </aside>
   </body>
