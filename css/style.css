@@ -1,6 +1,7 @@
 body{
     font-family: 'Montserrat', sans-serif;
     background-color: #f5f7fa;
+    font-size: 17px;
 }
 /* main */
 .main{display: flex;
@@ -26,7 +27,6 @@ margin-bottom: 40px;
 .about-position{
 font-style: normal;
 font-weight: bold;
-font-size: 15px;
 line-height: 15px;
 color: #000000;
 margin-bottom: -20px;
@@ -44,7 +44,7 @@ margin-bottom: 25px;
 .about-class{
 font-style: normal;
 font-weight: normal;
-font-size: 14px;
+
 line-height: 24px;
 color: #595959;
 width: 400px;
@@ -83,7 +83,6 @@ margin-left: 15px;
 projects-title{
 font-style: normal;
 font-weight: normal;
-font-size: 17px;
 line-height: 24px;
 color: #595959;
 }
@@ -105,7 +104,6 @@ color: #595959;
 .li-class{
  font-style: normal;
  font-weight: normal;
- font-size: 17px;
  line-height: 24px;
  color: #595959;
 }
@@ -114,7 +112,6 @@ color: #595959;
 .project-bricket{
  font-style: normal;
  font-weight: normal;
- font-size: 20px;
  line-height: 24px;
  color: #000000;
 }
@@ -123,11 +120,10 @@ color: #595959;
 .organization,
 position{
     font-weight: bold;
-    font-size: 17px;
     line-height: 20px;
     color: #000;
-    margin-top: -10px;
-    margin-bottom: -10px;
+    margin-top: -5px;
+    margin-bottom: -5px;
 }
 
 .position{
@@ -156,7 +152,6 @@ position{
     color: #fff;
     font-style: normal;
     font-weight: bold;
-    font-size: 20px;
     line-height: 15px;
     margin-bottom: 5px;
 }
@@ -180,7 +175,6 @@ position{
 .contact-type{
     font-style: normal;
     font-weight: bold;
-    font-size: 14px;
     line-height: 24px;
     color: #FFFFFF;
     margin-right: 5px;
@@ -209,7 +203,6 @@ color: #565e6a;
     color: #fff;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
     line-height: 24px;
 }
 
